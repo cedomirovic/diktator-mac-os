@@ -37,7 +37,7 @@ izdanja i opciono doterivanje teksta, koje sam uključuješ.
 ### Gotova aplikacija
 
 1. Preuzmi `Diktator-0.5.0-macOS-arm64.zip` sa
-   [Releases](https://github.com/cedomirovic/pitchi/releases/latest).
+   [Releases](https://github.com/cedomirovic/diktator-mac-os/releases/latest).
 2. Otpakuj i prevuci `Diktator.app` u `/Applications`.
 3. Prvi put: desni klik na aplikaciju → **Open** → **Open** ponovo. Aplikacija
    nije notarizovana, pa je macOS inače blokira. Alternativa:
@@ -51,8 +51,8 @@ Potrebni su Command Line Tools (`xcode-select --install`), `cmake`
 (`brew install cmake`) i `git` — samo za prvo građenje whisper.cpp-a.
 
 ```bash
-git clone https://github.com/cedomirovic/pitchi.git
-cd pitchi
+git clone https://github.com/cedomirovic/diktator-mac-os.git
+cd diktator-mac-os
 bash app/instaliraj.sh            # prvi put
 bash app/instaliraj.sh --prepisi  # nova verzija (stara ide u .bak)
 ```

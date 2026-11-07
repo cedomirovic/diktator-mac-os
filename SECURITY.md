@@ -15,7 +15,7 @@ raditi, ali se ne održavaju.
 **Ne otvaraj javni GitHub issue za bezbednosni problem.** Koristi GitHub
 Security Advisory:
 
-<https://github.com/cedomirovic/pitchi/security/advisories/new>
+<https://github.com/cedomirovic/diktator-mac-os/security/advisories/new>
 
 U prijavi navedi:
 

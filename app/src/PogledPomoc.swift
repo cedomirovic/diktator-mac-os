@@ -249,7 +249,7 @@ struct PogledPomoc: View {
 
             Spacer(minLength: 10)
 
-            Link(destination: URL(string: "https://github.com/cedomirovic/pitchi")!) {
+            Link(destination: URL(string: "https://github.com/cedomirovic/diktator-mac-os")!) {
                 HStack(spacing: 6) {
                     Image(systemName: "arrow.up.right")
                         .font(.system(size: 10, weight: .semibold))

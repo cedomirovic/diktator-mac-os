@@ -60,7 +60,7 @@ lakši modeli se preuzimaju direktno iz aplikacije.
 ### Gotova aplikacija
 
 1. Preuzmi najnoviji `Diktator-…-macOS-arm64.zip` sa
-   [Releases](https://github.com/cedomirovic/pitchi/releases/latest).
+   [Releases](https://github.com/cedomirovic/diktator-mac-os/releases/latest).
 2. Otpakuj i prevuci `Diktator.app` u `/Applications`.
 3. Aplikacija nije notarizovana, pa je macOS pri prvom pokretanju blokira. Ako
    se to desi, vidi **Ako macOS blokira aplikaciju** ispod — sve ide kroz
@@ -96,8 +96,8 @@ Potrebni su Command Line Tools (`xcode-select --install`), `cmake`
 (`brew install cmake`) i `git` — samo za prvo građenje whisper.cpp-a.
 
 ```bash
-git clone https://github.com/cedomirovic/pitchi.git
-cd pitchi
+git clone https://github.com/cedomirovic/diktator-mac-os.git
+cd diktator-mac-os
 bash app/instaliraj.sh            # prvi put
 bash app/instaliraj.sh --prepisi  # nova verzija (stara ide u .bak)
 ```
@@ -278,8 +278,8 @@ servisu odvojeno; ne upisuju se u istoriju ni u fajl sa podešavanjima.
 ## Ažuriranja
 
 Diktator pri pokretanju i najviše jednom dnevno pita GitHub za najnovije izdanje
-(`api.github.com/repos/cedomirovic/pitchi/releases/latest`). Ako je verzija
-novija od instalirane:
+(`api.github.com/repos/cedomirovic/diktator-mac-os/releases/latest`). Ako je
+verzija novija od instalirane:
 
 - prikaže sistemsko obaveštenje (prvi put traži dozvolu za obaveštenja),
 - u obaveštenju, traci i Podešavanjima napiše **šta je novo** — stavke iz opisa

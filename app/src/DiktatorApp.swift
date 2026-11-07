@@ -218,11 +218,11 @@ struct DiktatorMain {
                 - Statistika sa izborom perioda od 7, 14 ili 30 dana.
                 - Traka o novom izdanju je sada na dnu prozora.
                 """,
-                html_url: URL(string: "https://github.com/cedomirovic/pitchi/releases/tag/v1.1.0")!,
+                html_url: URL(string: "https://github.com/cedomirovic/diktator-mac-os/releases/tag/v1.1.0")!,
                 assets: [
                     Izdanje.Fajl(
                         name: "Diktator-1.1.0-macOS-arm64.zip",
-                        browser_download_url: URL(string: "https://github.com/cedomirovic/pitchi/releases/download/v1.1.0/Diktator-1.1.0-macOS-arm64.zip")!
+                        browser_download_url: URL(string: "https://github.com/cedomirovic/diktator-mac-os/releases/download/v1.1.0/Diktator-1.1.0-macOS-arm64.zip")!
                     )
                 ]
             )

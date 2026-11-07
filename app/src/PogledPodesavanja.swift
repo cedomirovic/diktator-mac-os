@@ -729,7 +729,7 @@ struct PogledPodesavanja: View {
                 opis: "whisper.cpp \(whisper_version().map { String(cString: $0) } ?? "")",
                 prvi: true
             ) {
-                Link("GitHub", destination: URL(string: "https://github.com/cedomirovic/pitchi")!)
+                Link("GitHub", destination: URL(string: "https://github.com/cedomirovic/diktator-mac-os")!)
                     .font(.system(size: 11.5, weight: .medium))
             }
 

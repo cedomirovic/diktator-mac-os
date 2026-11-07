@@ -187,9 +187,10 @@ enum GreskaAzuriranja: LocalizedError {
 }
 
 enum Azuriranja {
-    // Javni repozitorijum u kome su objavljena izdanja. Adresa je zadržana
-    // jer se tu već nalaze release-i i stare veze.
-    static let repozitorij = "cedomirovic/pitchi"
+    // Javni repozitorijum u kome su objavljena izdanja. Stare instalacije
+    // još zovu staro ime (`pitchi`), ali GitHub preusmerava te adrese na novo
+    // ime, pa provera ažuriranja i njima radi.
+    static let repozitorij = "cedomirovic/diktator-mac-os"
 
     static var adresaNajnovijeg: URL {
         // Samo za razvoj i testiranje: lokalni mock umesto GitHub-a.

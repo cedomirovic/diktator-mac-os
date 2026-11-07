@@ -608,6 +608,32 @@ današnje ime aplikacije.)*
   proveren posle raspakivanja (`codesign --verify --deep --strict`, verzija
   1.0.2/18, bez `__MACOSX`), a `--test-obavestenje` protiv stvarnog izdanja
   čita svih 5 stavki iz opisa; tag `v1.0.2` je na `abd2860`.
+- **07.11.2026. (ime repoa)** — javni repo je preimenovan sa `pitchi` na
+  **`diktator-mac-os`**, a lokalni folder prati novo ime. Odluke:
+  - menjane su **samo spoljne adrese**: `Azuriranja.repozitorij`, linkovi u
+    Pomoći i Podešavanjima, demo izdanje za `--slika`, `README.md`,
+    `app/README.md` i `SECURITY.md` (uključujući `cd diktator-mac-os`);
+  - **identitet aplikacije nije diran**: `CFBundleIdentifier`
+    (`com.cedomirovic.pitchi`), Keychain servis, ključ podešavanja
+    `pitchi.podesavanja.v1`, potpis `Pichi Local Dev`, migracija
+    Application Support foldera i `STARI_ID` u `instaliraj.sh` ostaju isti —
+    zato dozvole, login item, istorija, rečnik i ključevi prežive izmenu;
+  - stare instalacije zovu staru adresu, ali GitHub preusmerava
+    (`api.github.com/repos/cedomirovic/pitchi/releases/latest` → 301 na novi
+    repo), pa provera ažuriranja radi i bez nove verzije;
+  - `git remote` je prebačen na novo ime, `gh repo set-default` više nije
+    potreban jer remote nosi ime.
+  Provereno: `node --check`, `node diktator.js --help`, `npm test` (11/11),
+  `bash app/build.sh`, `--dozvole`, `--test-obavestenje` (sa novog repoa čita
+  1.0.2, 5 stavki), `curl` na staru API adresu daje 301, a stari link paketa
+  radi (200 posle preusmerenja). Verzija je `1.0.3` (build 19), `package.json`
+  `1.0.3`; instalirano u `/Applications/Diktator.app` (stara u `.bak`), bundle
+  ID i dalje `com.cedomirovic.pitchi`. Objavljen je release `v1.0.3` sa
+  `Diktator-1.0.3-macOS-arm64.zip` (2.864.604 bajta, SHA-256
+  `36390e77bf757ef57d48b8d3800377704839ba7038de8a11bb6f0b0291caaa9c`);
+  paket proveren posle raspakivanja (`codesign --verify --deep --strict`,
+  verzija 1.0.3/19, bez `__MACOSX`), a `--test-obavestenje` protiv novog
+  izdanja čita 3 stavke. Tag `v1.0.3` je na `c9f7848`.
 - Sledeći korak: probni diktat sa stvarnim Gemini API ključem (ili drugim
   izabranim servisom), fizički probati `Fn + Space` i desni modifikator na
   tastaturi koja ga ima, po potrebi brisanje modela koje korisnik ne želi
